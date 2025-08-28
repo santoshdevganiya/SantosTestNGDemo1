@@ -23,6 +23,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class DataProviderExp {
 
+
+	
 	WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -100,6 +102,7 @@ public class DataProviderExp {
 
 	}
 
+	
 	@BeforeSuite
 	public void setupReport() {
 		// Location of report
@@ -121,3 +124,7 @@ public class DataProviderExp {
 		extent.flush();
 	}
 }
+
+
+
+
