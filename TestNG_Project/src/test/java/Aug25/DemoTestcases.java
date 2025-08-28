@@ -17,7 +17,7 @@ public class DemoTestcases {
 
 	  public static ExtentReports extent;
 	    public static ExtentTest test;
-	
+
 	@Test
 	public void m1()
 	{
@@ -26,7 +26,7 @@ public class DemoTestcases {
         test.log(Status.INFO, "Entering password");
         test.pass("Login successful");
 		assertTrue(true);
-		
+
 	}
 	@Test
 	public void m2()
@@ -44,19 +44,19 @@ public class DemoTestcases {
         test.log(Status.INFO, "Entering username");
         test.log(Status.INFO, "Entering password");
         test.pass("Login successful");
-		assertTrue(true);	
+		assertTrue(true);
 	}
-	
+
 	@Test
 	public void m4()
 	{
-		
+
 		test = extent.createTest("Invalid Login Test");
         test.log(Status.INFO, "Entering wrong username");
         test.log(Status.INFO, "Entering wrong password");
         test.fail("Login failed as expected");
 	//	assertTrue(false);
-		
+
 	}
 	@Test
 	public void m5()
@@ -67,7 +67,7 @@ public class DemoTestcases {
         test.fail("Login failed as expected");
 //		assertTrue(false);
 	}
-	
+
 	 @BeforeSuite
 	    public void setupReport() {
 	        // Location of report
@@ -81,7 +81,7 @@ public class DemoTestcases {
 	        extent.setSystemInfo("OS", System.getProperty("os.name"));
 	        extent.setSystemInfo("Tester", "Santosh");
 	    }
-	 
+
 	 @AfterSuite
 	    public void tearDownReport() {
 	        // Write all logs to the report

@@ -7,29 +7,13 @@
     <parameter name="username" value="Admin"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="Aug25.DataProviderExp">
+      <class name="Aug25.OrangeHrm">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="tearDown1"/>
-          <include name="AdminLogin"/>
-          <include name="generateReport"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Aug25.DataProviderExp -->
+      </class> <!-- Aug25.OrangeHrm -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" name="EdgeTest(failed)">
-    <parameter name="Browser" value="Edge"/>
-    <classes>
-      <class name="Aug25.DataProviderExp">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="tearDown1"/>
-          <include name="AdminLogin" invocation-numbers="4"/>
-          <include name="generateReport"/>
-        </methods>
-      </class> <!-- Aug25.DataProviderExp -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowser] -->

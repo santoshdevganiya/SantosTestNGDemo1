@@ -1,91 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-27T10:00:37 IST" name="Default suite" finished-at="2025-08-27T10:00:54 IST" duration-ms="16474">
+  <suite started-at="2025-08-28T12:16:42 IST" name="CrossBrowser" finished-at="2025-08-28T12:16:47 IST" duration-ms="5374">
     <groups>
     </groups>
-    <test started-at="2025-08-27T10:00:37 IST" name="Default test" finished-at="2025-08-27T10:00:54 IST" duration-ms="16474">
-      <class name="Aug25.DataproviderwithExcelDemo">
-        <test-method is-config="true" signature="before_Save()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:37 IST" name="before_Save" finished-at="2025-08-27T10:00:37 IST" duration-ms="928" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before_Save -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:38 IST" name="setup" finished-at="2025-08-27T10:00:39 IST" duration-ms="1495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminLogin(int,java.lang.String,java.lang.String)[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:39 IST" name="AdminLogin" data-provider="getData" finished-at="2025-08-27T10:00:41 IST" duration-ms="1767" status="PASS">
+    <test started-at="2025-08-28T12:16:42 IST" name="ChromeTest" finished-at="2025-08-28T12:16:47 IST" duration-ms="5374">
+      <class name="Aug25.OrangeHrm">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Aug25.OrangeHrm@6e535154]" started-at="2025-08-28T12:16:42 IST" name="setup" finished-at="2025-08-28T12:16:44 IST" duration-ms="2591" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Santosh]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Santosh@123]]>
+                <![CDATA[http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:41 IST" name="tearDown" finished-at="2025-08-27T10:00:41 IST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:41 IST" name="setup" finished-at="2025-08-27T10:00:42 IST" duration-ms="1097" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AdminLogin(int,java.lang.String,java.lang.String)[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:42 IST" name="AdminLogin" data-provider="getData" finished-at="2025-08-27T10:00:44 IST" duration-ms="1817" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Aug25.OrangeHrm@6e535154]" started-at="2025-08-28T12:16:44 IST" name="login" finished-at="2025-08-28T12:16:47 IST" duration-ms="2596" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sagar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sagar@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:44 IST" name="tearDown" finished-at="2025-08-27T10:00:44 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:44 IST" name="setup" finished-at="2025-08-27T10:00:45 IST" duration-ms="1045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminLogin(int,java.lang.String,java.lang.String)[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:45 IST" name="AdminLogin" data-provider="getData" finished-at="2025-08-27T10:00:48 IST" duration-ms="2606" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[Admin]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[Qedge123!@#]]>
               </value>
@@ -93,74 +33,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:48 IST" name="tearDown" finished-at="2025-08-27T10:00:48 IST" duration-ms="227" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.OrangeHrm@6e535154]" started-at="2025-08-28T12:16:47 IST" name="tearDown" finished-at="2025-08-28T12:16:47 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:48 IST" name="setup" finished-at="2025-08-27T10:00:49 IST" duration-ms="959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminLogin(int,java.lang.String,java.lang.String)[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:49 IST" name="AdminLogin" data-provider="getData" finished-at="2025-08-27T10:00:51 IST" duration-ms="2019" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mehul]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mehul@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:51 IST" name="tearDown" finished-at="2025-08-27T10:00:51 IST" duration-ms="198" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:51 IST" name="setup" finished-at="2025-08-27T10:00:52 IST" duration-ms="856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AdminLogin(int,java.lang.String,java.lang.String)[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:52 IST" name="AdminLogin" data-provider="getData" finished-at="2025-08-27T10:00:54 IST" duration-ms="1628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pratil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Pratik@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:54 IST" name="tearDown" finished-at="2025-08-27T10:00:54 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SaveExcel()[pri:0, instance:Aug25.DataproviderwithExcelDemo@69c81773]" started-at="2025-08-27T10:00:54 IST" name="SaveExcel" finished-at="2025-08-27T10:00:54 IST" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SaveExcel -->
-      </class> <!-- Aug25.DataproviderwithExcelDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Aug25.OrangeHrm -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- CrossBrowser -->
 </testng-results>

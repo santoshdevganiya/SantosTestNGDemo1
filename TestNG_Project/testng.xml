@@ -7,7 +7,7 @@
  <parameter name="password" value="Qedge123!@#"></parameter>
  <parameter name="Browser" value="Chrome"></parameter>
     <classes>
-       <class name="Aug25.DataproviderwithExcelDemo"/>
+       <class name="Aug25.OrangeHrm"/>
         
      
     </classes>

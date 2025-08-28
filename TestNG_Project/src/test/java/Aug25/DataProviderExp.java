@@ -6,17 +6,12 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v132.fedcm.model.LoginState;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeDriverService;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -24,10 +19,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.model.ReportStats;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DataProviderExp {
 
@@ -80,12 +72,12 @@ public class DataProviderExp {
 		if (actual.contains(expected)) {
 			test = extent.createTest("Valid Login Test");
 	        test.log(Status.PASS, "Entering username");
-	        
+
 	        test.pass("Login successful");
 		} else {
 			test = extent.createTest("Invalid Login Test");
 	        test.log(Status.FAIL, "Entering wrong username");
-	        
+
 	        test.fail("Login failed as expected");
 		}
 
@@ -121,7 +113,7 @@ public class DataProviderExp {
 		extent.setSystemInfo("OS", System.getProperty("os.name"));
 		extent.setSystemInfo("Tester", "Santosh");
 	}
-	
+
 
 	@AfterSuite
 	public void tearDownReport() {

@@ -1,19 +1,13 @@
 package Aug25;
 
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 
-
-
-import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
@@ -23,14 +17,11 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeDriverService;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -44,7 +35,7 @@ public class DataproviderwithExcelDemo extends ExcelSheetReaderLogic {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	
+
 	@BeforeMethod
 	public void setup() {
 		driver = new ChromeDriver();
@@ -80,12 +71,12 @@ public class DataproviderwithExcelDemo extends ExcelSheetReaderLogic {
 			System.out.println(rowIndex);
 			test = extent.createTest("Valid Login Test");
 	        test.log(Status.PASS, "Entering username");
-	        
+
 	        test.pass("Login successful");
 		} else {
 			test = extent.createTest("Invalid Login Test");
 	        test.log(Status.FAIL, "Entering wrong username");
-	        
+
 	        test.fail("Login failed as expected");
 			AddResult("Failed", rowIndex);
 			System.out.println("FAILED");
@@ -106,11 +97,11 @@ public class DataproviderwithExcelDemo extends ExcelSheetReaderLogic {
 
 	@BeforeSuite
 	public void before_Save() throws Exception, IOException {
-		
+
 		// Location of report
 				ExtentSparkReporter spark = new ExtentSparkReporter("./target/ExtentReport.html");
 				spark.config().setEncoding("utf-8");
-				spark.config().enableOfflineMode(true); 
+				spark.config().enableOfflineMode(true);
 
 				// Create ExtentReports and attach reporter
 				extent = new ExtentReports();
@@ -119,7 +110,7 @@ public class DataproviderwithExcelDemo extends ExcelSheetReaderLogic {
 				// Add some system info (optional)
 				extent.setSystemInfo("OS", System.getProperty("os.name"));
 				extent.setSystemInfo("Tester", "Santosh");
-		
+
 		FileInputStream fi = new FileInputStream("./Resources/LoginDetails.xlsx");
 
 		wb = WorkbookFactory.create(fi);
@@ -155,12 +146,14 @@ public class DataproviderwithExcelDemo extends ExcelSheetReaderLogic {
 
 		// --- Write Test Result in that column ---
 		Row row = sheet.getRow(rowIndex);
-		if (row == null)
+		if (row == null) {
 			row = sheet.createRow(rowIndex);
+		}
 
 		Cell resultCell = row.getCell(resultColIndex);
-		if (resultCell == null)
+		if (resultCell == null) {
 			resultCell = row.createCell(resultColIndex);
+		}
 
 		if ("Pass".equalsIgnoreCase(Status)) {
 			resultCell.setCellValue("PASS");
