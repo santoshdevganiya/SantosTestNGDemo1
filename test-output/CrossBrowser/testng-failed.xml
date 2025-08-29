@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="password" value="Qedge123!@#"/>
+    <parameter name="url" value="http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login"/>
+    <parameter name="username" value="Admin"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Aug25.DataProviderExp">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tearDown1"/>
+          <include name="AdminLogin"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- Aug25.DataProviderExp -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="Browser" value="Edge"/>
+    <classes>
+      <class name="Aug25.DataProviderExp">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tearDown1"/>
+          <include name="AdminLogin" invocation-numbers="4"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- Aug25.DataProviderExp -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->

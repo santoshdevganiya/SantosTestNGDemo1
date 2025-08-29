@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-CrossBrowser" class="navigator-link">
+              <span class="suite-name border-failed">CrossBrowser</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-CrossBrowser" class="navigator-link ">
+                    <span>C:\Users\devga\eclipse-workspace\TestNG_Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-CrossBrowser" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-CrossBrowser" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-CrossBrowser" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-CrossBrowser" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-CrossBrowser" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-CrossBrowser" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossBrowser" class="hide-methods failed suite-CrossBrowser"> (hide)</a> <!-- hide-methods failed suite-CrossBrowser -->
+                      <a href="#" panel-name="suite-CrossBrowser" class="show-methods failed suite-CrossBrowser"> (show)</a> <!-- show-methods failed suite-CrossBrowser -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossBrowser">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser" title="Aug25.DataproviderwithExcelDemo" class="method navigator-link" hash-for-method="AdminLogin(4, Mehul, Mehul@123)">AdminLogin(4, Mehul, Mehul@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser" title="Aug25.DataproviderwithExcelDemo" class="method navigator-link" hash-for-method="AdminLogin(3, Admin, Qedge123!@#)">AdminLogin(3, Admin, Qedge123!@#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser" title="Aug25.DataproviderwithExcelDemo" class="method navigator-link" hash-for-method="AdminLogin(2, Sagar, Sagar@123)">AdminLogin(2, Sagar, Sagar@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser" title="Aug25.DataproviderwithExcelDemo" class="method navigator-link" hash-for-method="AdminLogin(1, Santosh, Santosh@123)">AdminLogin(1, Santosh, Santosh@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser" title="Aug25.DataproviderwithExcelDemo" class="method navigator-link" hash-for-method="AdminLogin(5, Pratil, Pratik@123)">AdminLogin(5, Pratil, Pratik@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowser -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CrossBrowser" class="panel CrossBrowser">
+          <div class="suite-CrossBrowser-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Aug25.DataproviderwithExcelDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin(4, Mehul, Mehul@123)">
+                  </a> <!-- AdminLogin(4, Mehul, Mehul@123) -->
+                  <span class="method-name">AdminLogin</span>
+                  <span class="parameters">(4,Mehul,Mehul@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4e9fdd6b42393f53e5feb922d1b0472, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\devga\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58641/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4e9fdd6b42393f53e5feb922d1b0472
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Aug25.DataproviderwithExcelDemo.AdminLogin(DataproviderwithExcelDemo.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin(3, Admin, Qedge123!@#)">
+                  </a> <!-- AdminLogin(3, Admin, Qedge123!@#) -->
+                  <span class="method-name">AdminLogin</span>
+                  <span class="parameters">(3,Admin,Qedge123!@#)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a27ffde2f185e280fceb6470ca0d3144, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\devga\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58594/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a27ffde2f185e280fceb6470ca0d3144
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Aug25.DataproviderwithExcelDemo.AdminLogin(DataproviderwithExcelDemo.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin(2, Sagar, Sagar@123)">
+                  </a> <!-- AdminLogin(2, Sagar, Sagar@123) -->
+                  <span class="method-name">AdminLogin</span>
+                  <span class="parameters">(2,Sagar,Sagar@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e71611291296e80e56e6aa8d3b202d5, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\devga\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58546/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e71611291296e80e56e6aa8d3b202d5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Aug25.DataproviderwithExcelDemo.AdminLogin(DataproviderwithExcelDemo.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin(1, Santosh, Santosh@123)">
+                  </a> <!-- AdminLogin(1, Santosh, Santosh@123) -->
+                  <span class="method-name">AdminLogin</span>
+                  <span class="parameters">(1,Santosh,Santosh@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3437d7e8886621691bcd0ccf86e89222, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\devga\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58502/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3437d7e8886621691bcd0ccf86e89222
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Aug25.DataproviderwithExcelDemo.AdminLogin(DataproviderwithExcelDemo.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin(5, Pratil, Pratik@123)">
+                  </a> <!-- AdminLogin(5, Pratil, Pratik@123) -->
+                  <span class="method-name">AdminLogin</span>
+                  <span class="parameters">(5,Pratil,Pratik@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2d41badfa9218daf264995b5f18d14a, findElement {using=id, value=txtUsername}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\devga\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58682/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2d41badfa9218daf264995b5f18d14a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Aug25.DataproviderwithExcelDemo.AdminLogin(DataproviderwithExcelDemo.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowser-class-failed -->
+        </div> <!-- panel CrossBrowser -->
+        <div panel-name="test-xml-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\devga\eclipse-workspace\TestNG_Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;CrossBrowser&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Qedge123!@#&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;Admin&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Aug25.DataproviderwithExcelDemo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowser --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CrossBrowser</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CrossBrowser</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CrossBrowser</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CrossBrowser');
+function tableData_CrossBrowser() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AdminLogin')
+data.setCell(0, 2, 'Aug25.DataproviderwithExcelDemo')
+data.setCell(0, 3, 50649);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AdminLogin')
+data.setCell(1, 2, 'Aug25.DataproviderwithExcelDemo')
+data.setCell(1, 3, 50418);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AdminLogin')
+data.setCell(2, 2, 'Aug25.DataproviderwithExcelDemo')
+data.setCell(2, 3, 50369);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AdminLogin')
+data.setCell(3, 2, 'Aug25.DataproviderwithExcelDemo')
+data.setCell(3, 3, 50295);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AdminLogin')
+data.setCell(4, 2, 'Aug25.DataproviderwithExcelDemo')
+data.setCell(4, 3, 50289);
+window.suiteTableData['CrossBrowser']= { tableData: data, tableDiv: 'times-div-CrossBrowser'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-CrossBrowser">
+              </div> <!-- times-div-CrossBrowser -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CrossBrowser</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CrossBrowser" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Aug25.DataproviderwithExcelDemo</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">before_Save</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLogin(1, Santosh, Santosh@123)</span>
+                <span class="method-start">3224 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53664 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">53912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLogin(2, Sagar, Sagar@123)</span>
+                <span class="method-start">54832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">105208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLogin(3, Admin, Qedge123!@#)</span>
+                <span class="method-start">106410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156712 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">156979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLogin(4, Mehul, Mehul@123)</span>
+                <span class="method-start">157881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">208536 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">208782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AdminLogin(5, Pratil, Pratik@123)</span>
+                <span class="method-start">209729 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">260021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">SaveExcel</span>
+                <span class="method-start">260377 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
